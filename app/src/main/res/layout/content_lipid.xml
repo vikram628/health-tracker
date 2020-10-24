@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_lipid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.healthtracker.empoweringtechnologies.healthtracker.Lipid"
+    tools:showIn="@layout/activity_lipid">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#00e5e5ff"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.10"
+            android:background="#3F51B5"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:id="@+id/textView_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/title_activity_lipid"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="0.11"
+            android:background="#3F51B5"
+            android:orientation="horizontal"
+            android:outlineProvider="none">
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:background="#3F51B5"
+                android:onClick="RecordLipdData"
+                android:text="@string/save"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:background="#3F51B5"
+                android:onClick="ClearLipidData"
+                android:text="@string/clear"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight=".5"
+                android:layout_gravity="left">
+                <TextView
+                    android:id="@+id/lbltotalcholesterol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/totalcholesterol"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/lblldl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/ldl"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/lblhdl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="date"
+                    android:text="@string/hdl"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/lbltriglycerides"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/triglycerides"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/lblDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/date"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight=".5"
+                android:layout_gravity="left">
+
+                <EditText
+                    android:id="@+id/txttotalcholesterol"
+                    android:layout_height="60dp"
+                    android:layout_width="60dp"
+                    android:inputType="textCapSentences"
+                    android:layout_marginTop="0dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/txtldl"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:inputType="textCapSentences"
+                    android:layout_marginTop="0dp"
+                    android:textColor="@color/black" />
+
+
+                <EditText
+                    android:id="@+id/txthdl"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:inputType="textCapSentences" />
+
+                <EditText
+                    android:id="@+id/txttriglycerides"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="0dp"
+                    android:textColor="@color/black"
+                    />
+
+                <EditText
+                    android:id="@+id/txtlipidDate"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="0dp"
+                    android:inputType="number|numberDecimal"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

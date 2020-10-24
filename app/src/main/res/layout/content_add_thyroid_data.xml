@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_add_thyroid_function"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.healthtracker.empoweringtechnologies.healthtracker.AddThyroidData"
+    tools:showIn="@layout/activity_add_thyroid_data">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#00e5e5ff"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.10"
+            android:background="#3F51B5"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:id="@+id/textView_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/title_activity_add_thyroid_data"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="0.11"
+            android:background="#3F51B5"
+            android:orientation="horizontal"
+            android:outlineProvider="none">
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:background="#3F51B5"
+                android:onClick="RecordThyroidFunctionData"
+                android:text="@string/save"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:background="#3F51B5"
+                android:onClick="ClearAll"
+                android:text="@string/clear"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight=".5"
+                android:layout_gravity="left">
+                <TextView
+                    android:id="@+id/lbltsh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/tsh"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/lblfreet4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/freet4"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/lblfreet3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/freet3"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/lblthyroidfunctiondate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/kidneyfunctiondate"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight=".5"
+                android:layout_gravity="left">
+
+                <EditText
+                    android:id="@+id/txttsh"
+                    android:layout_height="60dp"
+                    android:layout_width="100dp"
+                    android:inputType="textCapSentences"
+                    android:layout_marginTop="0dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/txtfreet4"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:inputType="textCapSentences"
+                    android:layout_marginTop="0dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/txtfreet3"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:inputType="textCapSentences"
+                    android:layout_marginTop="0dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/txtthyroidfunctiondate"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="0dp"
+                    android:textColor="@color/black"
+                    android:inputType="textCapSentences" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

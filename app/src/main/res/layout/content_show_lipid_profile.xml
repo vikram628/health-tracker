@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_show_lipid_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="10dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.healthtracker.empoweringtechnologies.healthtracker.ShowLipidProfile"
+    tools:showIn="@layout/activity_show_lipid_profile">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/totalcholesterol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="90dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/cholesterol"
+            android:textAlignment="textStart"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/blue"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/ldl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="30dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/ldlreport"
+            android:textAlignment="textStart"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/blue"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/hdl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="30dp"
+            android:gravity="center"
+            android:text="@string/hdlreport"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/blue"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/triglycerides"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="90dp"
+            android:gravity="center"
+            android:text="@string/triglyceridesreport"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/blue"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/lipiddate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="120dp"
+            android:gravity="center"
+            android:text="@string/date"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/blue"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/LipidListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" />
+
+</RelativeLayout>

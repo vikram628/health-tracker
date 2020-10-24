@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_vital_Page"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="164dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@color/white"
+    android:paddingTop="100dp"
+    tools:context="com.healthtracker.empoweringtechnologies.healthtracker.VitalsPage"
+    tools:showIn="@layout/activity_vitals_page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <ImageButton
+                    app:srcCompat="@drawable/medicalreport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    android:id="@+id/imageButton8"
+                    android:onClick="GoReport"/>
+                <TextView
+                    android:text="@string/medicalreport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewReport"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LayOutEmailReport"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/emailicon"
+                android:background="@null"
+                android:id="@+id/imageButtonEmailReport"
+                android:clickable="true"
+                android:onClick="EMailReport"
+                />
+                <TextView
+                    android:text="@string/emailreport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewEmailReport"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LayoutHospital"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/hospital"
+                android:background="@null"
+                android:id="@+id/imageButtonNearestHospital"
+                android:clickable="true"
+                android:onClick="FindNearestHospitals"
+                />
+            <TextView
+                android:text="@string/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewLocation"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                />
+        </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:text="@string/graphs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            android:paddingLeft="30dp"
+            android:id="@+id/textView5" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        >
+
+        <RadioButton android:id="@+id/weightgraph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weightgraph"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton android:id="@+id/bpgraph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bpgraph"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton android:id="@+id/lipidgraph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lipidgraph"
+            android:onClick="onRadioButtonClicked"/>
+
+    </RadioGroup>
+    </LinearLayout>
+</LinearLayout>
+
+

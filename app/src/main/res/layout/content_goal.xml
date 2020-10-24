@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_goal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.healthtracker.empoweringtechnologies.healthtracker.Goal"
+    tools:showIn="@layout/activity_goal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#00e5e5ff"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.10"
+            android:paddingLeft="20dp"
+            android:background="#3F51B5"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:id="@+id/textView_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/title_activity_goal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5"
+            android:orientation="horizontal"
+            android:outlineProvider="none">
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:background="#3F51B5"
+                android:onClick="RecordGoal"
+                android:text="@string/save"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:background="#3F51B5"
+                android:onClick="ClearGoalData"
+                android:text="@string/clear"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="left"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/lblGoal"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/goal"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/txtGoal"
+                android:layout_height="wrap_content"
+                android:layout_width="250dp"
+                android:inputType="textCapSentences"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/lbltargetdate"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/targetdate"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/txtTargetDate"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black" />
+
+            </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
